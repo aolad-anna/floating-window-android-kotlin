@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">bubbleToffee</string>
+    <string name="show_button_text">Show Button</string>
+    <string name="remove_button_text">Remove Button</string>
+    <string name="missing_overlay_permission_dialog_title">Missing Overlay Permission</string>
+    <string name="missing_overlay_permission_dialog_message">Overlay Permission is required to continue. Allow permission?</string>
+    <string name="missing_overlay_permission_dialog_positive_button">Yes</string>
+    <string name="missing_overlay_permission_dialog_negative_button">No</string>
+</resources>

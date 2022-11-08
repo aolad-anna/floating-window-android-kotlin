@@ -1,0 +1,289 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mainLay"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@android:color/transparent">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView"
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        app:cardBackgroundColor="#673AB7"
+        app:cardCornerRadius="10dp"
+        app:layout_constraintBottom_toBottomOf="@+id/bubbleIconView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/bubbleIconView"
+        tools:ignore="MissingConstraints">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="45dp">
+
+            <TextView
+                android:id="@+id/matchOne"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="12dp"
+                android:gravity="center"
+                android:text="Qat vs Ecu"
+                android:textColor="@color/white"
+                android:textSize="15sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.2">
+
+            </TextView>
+
+            <TextView
+                android:id="@+id/matchTwo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="12dp"
+                android:gravity="center"
+                android:text="Qat vs Ecu"
+                android:textColor="@color/white"
+                android:textSize="15sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.2">
+
+            </TextView>
+
+            <TextView
+                android:id="@+id/scoreTwo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/ic_rectangle_39"
+                android:drawablePadding="3dp"
+                android:gravity="center"
+                android:text="0 - 0"
+                android:textColor="@color/white"
+                android:textSize="12sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="@+id/matchTwo"
+                app:layout_constraintStart_toStartOf="@+id/matchTwo">
+
+            </TextView>
+
+            <TextView
+                android:id="@+id/scoreOne"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/ic_rectangle_39"
+                android:drawablePadding="3dp"
+                android:gravity="center"
+                android:text="0 - 0"
+                android:textColor="@color/white"
+                android:textSize="12sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="@+id/matchOne"
+                app:layout_constraintStart_toStartOf="@+id/matchOne">
+
+            </TextView>
+
+            <TextView
+                android:id="@+id/countSec"
+                android:layout_width="30dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="12dp"
+                android:gravity="center"
+                android:text="33"
+                android:textColor="@color/white"
+                android:textSize="18sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.2">
+
+            </TextView>
+
+            <TextView
+                android:id="@+id/countMin"
+                android:layout_width="30dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="15dp"
+                android:gravity="center"
+                android:text="12"
+                android:textColor="@color/white"
+                android:textSize="18sp"
+                app:layout_constraintBottom_toBottomOf="@+id/countSec"
+                app:layout_constraintEnd_toStartOf="@+id/countSec"
+                app:layout_constraintTop_toTopOf="@+id/countSec"
+                app:layout_constraintVertical_bias="0.0">
+
+            </TextView>
+
+            <TextView
+                android:id="@+id/dayText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="days"
+                android:textColor="@color/white"
+                android:textSize="12sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="@+id/countDay"
+                app:layout_constraintStart_toStartOf="@+id/countDay"
+                app:layout_constraintTop_toBottomOf="@+id/countDay">
+
+            </TextView>
+
+            <TextView
+                android:id="@+id/minText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="mins"
+                android:textColor="@color/white"
+                android:textSize="12sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="@+id/countMin"
+                app:layout_constraintStart_toStartOf="@+id/countMin"
+                app:layout_constraintTop_toBottomOf="@+id/countMin">
+
+            </TextView>
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:background="#673AB7"
+                android:paddingLeft="5dp"
+                android:paddingTop="2dp"
+                android:paddingRight="5dp"
+                android:paddingBottom="2dp"
+                android:scaleType="fitXY"
+                app:layout_constraintEnd_toStartOf="@+id/countHour"
+                app:layout_constraintStart_toEndOf="@+id/countDay"
+                tools:layout_editor_absoluteY="0dp" />
+
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:background="#3F51B5"
+                android:paddingLeft="5dp"
+                android:paddingTop="2dp"
+                android:paddingRight="5dp"
+                android:paddingBottom="2dp"
+                android:scaleType="fitXY"
+                app:layout_constraintEnd_toStartOf="@+id/countSec"
+                app:layout_constraintStart_toEndOf="@+id/countMin"
+                tools:layout_editor_absoluteY="0dp" />
+
+            <TextView
+                android:id="@+id/secText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="sec"
+                android:textColor="@color/white"
+                android:textSize="12sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="@+id/countSec"
+                app:layout_constraintStart_toStartOf="@+id/countSec"
+                app:layout_constraintTop_toBottomOf="@+id/countSec">
+
+            </TextView>
+
+            <TextView
+                android:id="@+id/HourText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="hrs"
+                android:textColor="@color/white"
+                android:textSize="12sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="@+id/countHour"
+                app:layout_constraintStart_toStartOf="@+id/countHour"
+                app:layout_constraintTop_toBottomOf="@+id/countHour">
+
+            </TextView>
+
+            <TextView
+                android:id="@+id/countHour"
+                android:layout_width="30dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="15dp"
+                android:gravity="center"
+                android:text="24"
+                android:textColor="@color/white"
+                android:textSize="18sp"
+                app:layout_constraintBottom_toBottomOf="@+id/countDay"
+                app:layout_constraintStart_toEndOf="@+id/countDay"
+                app:layout_constraintTop_toTopOf="@+id/countDay"
+                app:layout_constraintVertical_bias="0.0">
+
+            </TextView>
+
+            <TextView
+                android:id="@+id/countDay"
+                android:layout_width="30dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="12dp"
+                android:gravity="center"
+                android:text="50"
+                android:textColor="@color/white"
+                android:textSize="18sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.2">
+
+            </TextView>
+
+            <androidx.constraintlayout.widget.Group
+                android:id="@+id/scoreBoard"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                app:constraint_referenced_ids="matchOne,matchTwo,scoreOne,scoreTwo" />
+
+            <androidx.constraintlayout.widget.Group
+                android:id="@+id/countDownBoard"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="visible"
+                app:constraint_referenced_ids="countDay,countDay,countHour, countMin, countSec, secText,dayText,HourText, minText" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/bubbleIconView"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_gravity="center"
+        app:cardBackgroundColor="#5CA8A8"
+        app:cardCornerRadius="28dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/cardView"
+        app:layout_constraintStart_toStartOf="@+id/cardView"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/draggable_view_image"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_gravity="center"
+            android:scaleType="fitCenter"
+            android:src="@drawable/annah">
+
+        </ImageView>
+
+    </androidx.cardview.widget.CardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
